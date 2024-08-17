@@ -148,7 +148,7 @@ export default function Home() {
             </div>
 
             {/* Green Circle between Cards */}
-            <div className="mt-4 md:mt-0 md:absolute md:left-[32.5%] md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 z-20">
+            <div className="mt-4 md:mt-0 md:absolute md:left-[33.5%] md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 z-20">
               <div className="h-12 w-12 bg-green-600 rounded-full flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
