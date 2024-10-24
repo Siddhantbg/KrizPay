@@ -1,0 +1,43 @@
+.crypto-sale {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .crypto-sale h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .crypto-sale p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .crypto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .crypto-item {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .crypto-item span {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #d0d0d0;
+  }
+  
+  .crypto-item svg {
+    color: #ffd700;
+  }
+  

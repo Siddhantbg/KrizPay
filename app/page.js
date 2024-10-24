@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar"; // Ensure Footer is used later
 import Card from "./components/Card"; // Ensure Footer is used later
-
+import CryptoSale from "./components/Cryptosale";
 
 export default function Home() {
   // State for left and right card details
