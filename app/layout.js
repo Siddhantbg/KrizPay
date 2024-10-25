@@ -6,7 +6,7 @@ import Card from "./components/Card";
 import Footer from "./components/Footer";
 import Treasury from "./components/treasure";
 import Section from "./components/Section";
-
+import Userexp from "./components/Userexp";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -27,11 +27,13 @@ export default function RootLayout({ children }) {
       <Navbar/>
 
         <div className="min-h-screen">{children}
-        <Footer />
+       
      
         <CryptoSale/>
         <Treasury/>
         <Section/>
+        <Userexp/>
+        <Footer />
         </div>
      
       </body>
