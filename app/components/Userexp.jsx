@@ -55,12 +55,12 @@ const Userexp = () => {
           ))}
         </div>
       </div>
-    </section>
-    <section className="bg-gradient-to-r  body-font from-black via-green-950 to-black text-white p-4 justify-start">
+    {/* </section> */}
+    {/* <section className="bg-gradient-to-r  body-font from-black via-green-950 to-black text-white p-4 justify-start"> */}
     <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div className="lg:max-w-2xl lg:w-full md:w-3/4 w-full mb-10 md:mb-0">
 <img
-  className="object-cover object-center rounded"
+  className="object-cover object-center rounded w-[1200px]"
   alt="hero"
   src="/security-concept-illustration 1.png"/>
 </div>
