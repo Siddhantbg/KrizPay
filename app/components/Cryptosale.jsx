@@ -1,44 +1,49 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBitcoin, faEthereum, faBitcoinCash, faLitecoin, faCcVisa, faCcMastercard } from '@fortawesome/free-brands-svg-icons';
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
-const CryptoSale = () => {
+const TeamSection = () => {
+  // Team members data
+  const teamMembers = [
+    { name: 'QIWI RUB', image: '/qiwi2.png' },
+    { name: 'YouMoney RUB', image: '/youmoney2.png' },
+    { name: 'Sber RUB', image: '/sber2.png' },
+    { name: 'Tinkoff RUB', image: '/tinker2.png' },
+    { name: 'Bitcoin BTC', image: '/bit2.png' },
+    { name: 'Visa/MasterCard RUB', image: '/visa2.png' },
+    { name: 'Bitcoin Cash BCH', image: '/bitcoin2.png' },
+    { name: 'Ethereum ETH', image: '/eth2.png' },
+    { name: 'Litecoin LTC', image: '/litcoin2.png' },
+  ];
+
   return (
     <section className="bg-gradient-to-r from-black via-green-950 to-black text-white p-4 justify-start">
-      <h1 className="text-3xl font-semibold mb-4">What is good about the CryptoSale</h1>
-      <p className="text-lg mb-10">
-        With our service, you can buy or sell cryptocurrency with a 100% guarantee. Transactions take place automatically, we do not store your data for any exchange.
-      </p>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div className=" p-6 rounded-lg flex flex-col items-center justify-center">
-          <FontAwesomeIcon icon={faBitcoin} size="3x" className="text-yellow-400" />
-          <span className="mt-4 text-gray-300">Bitcoin BTC</span>
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-col w-full mb-20">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4">What is good about the CryptoSale</h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed ml-4">
+            With our service, you can buy or sell cryptocurrency with a 100% guarantee. Transactions take place
+            automatically, we do not store your data for any exchange.
+          </p>
         </div>
-        <div className=" p-6 rounded-lg flex flex-col items-center justify-center">
-          <FontAwesomeIcon icon={faEthereum} size="3x" className="text-purple-500" />
-          <span className="mt-4 text-gray-300">Ethereum ETH</span>
+        <div className="flex flex-wrap -m-2 ">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="p-2 lg:w-1/4  md:w-1/2 w-full">
+              <div className="h-full flex items-center border-black border p-4 bg-black rounded-lg">
+                <img
+                  alt="team"
+                  className="w-16 h-16 bg-black object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src={member.image}
+                />
+                <div className="flex-grow">
+                  <h2 className="text-whitetitle-font font-medium">{member.name}</h2>
+                  <p className="text-gray-500">{member.role}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-        <div className=" p-6 rounded-lg flex flex-col items-center justify-center">
-          <FontAwesomeIcon icon={faBitcoinCash} size="3x" className="text-green-500" />
-          <span className="mt-4 text-gray-300">Bitcoin Cash BCH</span>
-        </div>
-        <div className=" p-6 rounded-lg flex flex-col items-center justify-center">
-          <FontAwesomeIcon icon={faLitecoin} size="3x" className="text-blue-500" />
-          <span className="mt-4 text-gray-300">Litecoin LTC</span>
-        </div>
-        <div className=" p-6 rounded-lg flex flex-col items-center justify-center">
-          <FontAwesomeIcon icon={faCcVisa} size="3x" className="text-blue-600" />
-          <span className="mt-4 text-gray-300">Visa/MasterCard</span>
-        </div>
-        <div className=" p-6 rounded-lg flex flex-col items-center justify-center">
-          <FontAwesomeIcon icon={faCheckCircle} size="3x" className="text-green-600" />
-          <span className="mt-4 text-gray-300">Sber RUB</span>
-        </div>
-        {/* Add more items as needed */}
       </div>
     </section>
   );
 };
 
-export default CryptoSale;
+export default TeamSection;
